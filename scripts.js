@@ -1,26 +1,19 @@
-const adicionar = () => {
-    const novaTarefa = document.getElementById("novaTarefa").value;
+    const adicionar = document.getElementById("adicionarbtn");
+    adicionar.addEventListener("click", () => {
+        const input = document.getElementById("novatarefa");
+        const texto = input.value;
+        const lista = document.getElementById("listatarefas");
 
-    if (novaTarefa.trim() === "") {
-        alert("Por favor, digite uma tarefa válida.");
+    if (texto.trim() === "") {
+        alert("insira alguma coisa");
         return;
+
+    } else {
+        const novoItem = document.createElement("li");
+        novoItem.textContent = texto;
+        lista.appendChild(novoItem);
+        input.value = "";
     }
-
-    const listaTarefas = document.getElementById("listaTarefas");
-
-    const item = document.createElement("li");
-    const textoTarefa = document.createTextNode(novaTarefa);
-
-    const botaoExcluir = document.createElement("button");
-    botaoExcluir.textContent = "Excluir";
-    botaoExcluir.className = "delete-btn";
-
-    botaoExcluir.addEventListener("click", function() {
-        listaTarefas.removeChild(item);
-    }   
-
-    item.addEventListener   ("click", function() {
-        item.classList.toggle("completed");
     });
 
-    
+
