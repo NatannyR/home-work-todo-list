@@ -2,14 +2,29 @@ body {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: blue;
 
 div {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 400px;
+    margin: 30px auto;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #f0f0f0;
     text-align: center;
     
 }
 
+ul {
+    list-style-type: none;
+    padding: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    color: rgb(23, 22, 22);
+    text-align: center;
+}
+
+title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
