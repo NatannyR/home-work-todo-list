@@ -1,37 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: #333;
+}
 
-div {
-    max-width: 400px;
-    margin: 30px auto;
+/* Container principal */
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+/* Input area */
+.input-task {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+#novatarefa {
+    flex: 1;
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+#novatarefa:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+/* Botões modernos */
+button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#adicionarbtn {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+}
+
+#adicionarbtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Lista moderna */
+#listatarefas {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
-    background-color: #f0f0f0;
-    text-align: center;
-    
+    margin-bottom: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+    transition: all 0.3s ease;
 }
 
-ul {
-    list-style-type: none;
-    padding: 50px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 10px 0;
-    color: rgb(23, 22, 22);
-    text-align: center;
+li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
+/* Botão excluir */
+li button {
+    background: #e74c3c;
+    color: white;
+    padding: 8px 15px;
+    font-size: 14px;
 }
 
-ul {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: rgb(30, 241, 122);
+li button:hover {
+    background: #c0392b;
 }
