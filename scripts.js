@@ -16,7 +16,8 @@ adicionar.addEventListener("click", () => {
     botaoExcluir.textContent = "Excluir";
 
     botaoExcluir.onclick = function () {
-      novoItem.remove();
+      textoSpan.style.textDecoration = "line-through"; 
+      textoSpan.style.opacity = "0.6"; 
     };
 
     novoItem.appendChild(textoSpan);
